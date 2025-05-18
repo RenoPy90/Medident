@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendar Cita - MediDent</title>
+  <link rel="stylesheet" href="../css/agendar_cita.css" />
+</head>
+<body>
+  <div class="contenedor">
+    <h2>Agendar Nueva Cita</h2>
+    <form id="formCita">
+      <label for="fecha">Seleccionar fecha:</label>
+      <select id="fecha" name="fecha" required>
+        <!-- Se llenará con JS -->
+      </select>
+
+      <label for="doctor">Profesional:</label>
+      <select id="doctor" name="doctor" required>
+        <option value="Dra. Gómez">Dra. Gómez</option>
+        <option value="Dr. Rodríguez">Dr. Rodríguez</option>
+        <option value="Dra. Villalba">Dra. Villalba</option>
+      </select>
+
+      <button type="submit">Agendar</button>
+    </form>
+
+    <p class="volver"><a href="../html/calendario.html">← Volver al calendario</a></p>
+  </div>
+
+  <script src="../js/agendar_cita.js"></script>
+</body>
+</html>
